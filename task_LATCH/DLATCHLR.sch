@@ -37,7 +37,7 @@ C {ipin.sym} -240 -200 0 0 {name=p5 lab=D}
 C {ipin.sym} -240 200 0 0 {name=p3 lab=E}
 C {opin.sym} 620 -120 0 0 {name=p4 lab=Q}
 C {opin.sym} 620 120 0 0 {name=p1 lab=AQ}
-C {LR/2NANDLR.sym} -20 -160 0 0 {name=X1}
-C {LR/2NANDLR.sym} 340 -120 0 0 {name=X2}
-C {LR/2NANDLR.sym} -20 160 0 0 {name=X3}
-C {LR/2NANDLR.sym} 340 120 0 0 {name=X4}
+C {LR/task_LATCH/2NANDLR.sym} -20 -160 0 0 {name=X1}
+C {LR/task_LATCH/2NANDLR.sym} 340 -120 0 0 {name=X2}
+C {LR/task_LATCH/2NANDLR.sym} -20 160 0 0 {name=X3}
+C {LR/task_LATCH/2NANDLR.sym} 340 120 0 0 {name=X4}
