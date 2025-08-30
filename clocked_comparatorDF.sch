@@ -98,28 +98,6 @@ N 340 -470 340 -400 {lab=#net4}
 N 1150 -290 1160 -290 {lab=#net8}
 N 1230 -420 1270 -420 {lab=#net7}
 N 1190 -350 1360 -350 {lab=CLK}
-C {code_shown.sym} 680 -920 0 0 {name=spice only_toplevel=false value="
-
-.inc /home/tororo/LR/T_mos_model.sp
-
-VVDD VDD 0 DC 3.3
-
-VINP INP 0 pwl (0   0 100n 3.3 200n   0 300n 3.3 400n   0 500n 3.3)
-VINM INM 0 pwl (0 3.3 100n   0 200n 3.3 300n   0 400n 3.3 500n 0)
-VCLK CLK 0 pulse(0 3.3 25n 1n 1n 50n 100n)
-ven EN 0 pulse(0 3.3 100n 1n 1n 200n 252n)
-
-.control
-tran 1n 400n
-
-plot v(OUT)
-plot v(CLK)
-plot v(INP)
-plot v(INM)
-
-write "clocked_comparatorDF.raw"
-
-.endc"}
 C {.klayout/salt/OpenRule1um/tech/tech/symbols/Xschem/MinedaLIB/NMOS_MIN.sym} 280 -330 2 0 {name=M4 model=nch w=3.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
 C {.klayout/salt/OpenRule1um/tech/tech/symbols/Xschem/MinedaLIB/PMOS_MIN.sym} 280 -470 2 0 {name=M1 model=pch w=10.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1qqq}
 C {.klayout/salt/OpenRule1um/tech/tech/symbols/Xschem/MinedaLIB/PMOS_MIN.sym} 100 -470 0 0 {name=M2 model=pch w=10.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
@@ -144,3 +122,36 @@ C {LR/task_LATCH/CLOCKEDINVERTER.sym} 1360 -320 0 1 {name=X6}
 C {ipin.sym} 560 -520 0 0 {name=p2 lab=EN}
 C {LR/task_LATCH/SELECTOR.sym} 810 -400 0 0 {name=x1}
 C {LR/task_LATCH/INVERTER.sym} 600 -400 0 0 {name=X2}
+C {code_shown.sym} 700 -1110 0 0 {name=spice1 only_toplevel=false value="
+
+.inc /home/tororo/LR/T_mos_model.sp
+
+VVDD VDD 0 DC 3.3
+
+VINP INP 0 pwl (0   0 100n 3.3 200n   0 300n 3.3 400n   0 500n 3.3 600n   0)
+VINM INM 0 pwl (0 3.3 100n   0 200n 3.3 300n   0 400n 3.3 500n   0 600n 3.3)
+VCLK CLK 0 pulse(0 3.3 25n 1n 1n 50n 100n)
+ven EN 0 pulse(0 3.3 0n 1n 1n 200n 250n)
+
+*Bmh   mh   0  v = u(V(EN) - 1.75)
+*Bml   ml   0  v = u(1.75 - V(EN))
+*BcurH curH 0 v = I(Vdd)*v(mh)
+*BcurL curL 0 v = I(Vdd)*v(ml)
+
+.control
+tran 1n 600n
+meas TRAN tplh TRIG CLK VAL=1.65 RISE=2 TARG OUT VAL=1.65 RISE=1
+meas TRAN tphlen TRIG EN VAL=1.75 RISE=2 TARG OUT VAL=1.75 FALL=2
+meas TRAN tphl TRIG CLK VAL=1.65 RISE=5 TARG OUT VAL=1.65 FALL=3
+meas TRAN Iavg AVG I(VVDD)
+*meas TRAN IavgH avg v(curH)
+*meas TRAN IavgL avg v(curL)
+
+plot v(OUT)
+plot v(CLK)
+plot v(INP)
+plot v(INM)
+
+write "clocked_comparatorDF.raw"
+
+.endc"}

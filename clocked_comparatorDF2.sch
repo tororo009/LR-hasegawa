@@ -98,19 +98,30 @@ N 1540 -420 1630 -420 {lab=OUT}
 N 1240 -380 1240 -350 {lab=GND}
 N 1230 -400 1240 -400 {lab=#net10}
 N 1140 -450 1140 -400 {lab=EN}
-C {code_shown.sym} 680 -930 0 0 {name=spice only_toplevel=false value="
+C {code_shown.sym} 1830 -590 0 0 {name=spice only_toplevel=false value="
 
 .inc /home/tororo/LR/T_mos_model.sp
 
 VVDD VDD 0 DC 3.3
 
-VINP INP 0 pwl (0   0 100n 3.3 200n   0 300n 3.3 400n   0 500n 3.3)
-VINM INM 0 pwl (0 3.3 100n   0 200n 3.3 300n   0 400n 3.3 500n 0)
+VINP INP 0 pwl (0   0 100n 3.3 200n   0 300n 3.3 400n   0 500n 3.3 600n   0)
+VINM INM 0 pwl (0 3.3 100n   0 200n 3.3 300n   0 400n 3.3 500n   0 600n 3.3)
 VCLK CLK 0 pulse(0 3.3 25n 1n 1n 50n 100n)
-ven EN 0 pulse(0 3.3 0n 1n 1n 200n 252n)
+ven EN 0 pulse(0 3.3 0n 1n 1n 200n 250n)
+
+*Bmh mh 0 v = \{u(V(EN) - 1.75)\}
+*Bml ml 0 v = \{1 - u(V(EN) - 1.75)\}
+*BcurH curH 0 v = I(VVDD)*v(mh)
+*BcurL curL 0 v = I(VVDD)*v(ml)
 
 .control
-tran 1n 400n
+tran 1n 600n
+meas TRAN tplh TRIG CLK VAL=1.65 RISE=2 TARG OUT VAL=1.65 RISE=1
+meas TRAN tphlen TRIG EN VAL=1.75 FALL=1 TARG OUT VAL=1.75 FALL=1
+meas TRAN tphl TRIG CLK VAL=1.65 RISE=5 TARG OUT VAL=1.65 FALL=2
+meas TRAN Iavg AVG I(VVDD)
+*meas TRAN IavgH AVG v(curH)
+*meas TRAN IavgL AVG v(curL)
 
 plot v(OUT)
 plot v(CLK)
