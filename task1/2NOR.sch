@@ -47,15 +47,16 @@ C {vdd.sym} 160 -300 0 0 {name=l1 lab=VDD}
 C {gnd.sym} 160 210 0 0 {name=l2 lab=GND}
 C {gnd.sym} 250 140 0 0 {name=l3 lab=GND}
 C {ipin.sym} -110 -60 0 0 {name=p3 lab=A}
-C {code_shown.sym} 460 -110 0 0 {name=2NOR only_toplevel=false 
+C {code_shown.sym} 390 -120 0 0 {name=2NOR only_toplevel=false 
 value= ".include /home/tororo/pdk/T_mos_model.sp
-va A 0 pulse(0 1.8 0n 100p 100p 5n 10n)
-vb B 0 pulse(0 1.8 2.5n 100p 100p 5n 10n)
-vvdd VDD 0 dc 1.8
+va A 0 pulse(0 1.8 0n 1n 1n 50n 100n)
+vb B 0 pulse(0 1.8 0n 1n 1n 100n 200n)
+VVDD VDD 0 dc 1.8
 .control
-tran 10p 40n
-meas tran tplh TRIG OUT VAL=0.9 RISE=1 
-meas tran tphl TRIG OUT VAL=0.9 FALL=1
+tran 10p 400n
+meas TRAN tplh TRIG A VAL=0.9 FALL=2 TARG OUT VAL=0.9 RISE=1
+meas TRAN tphl TRIG A VAL=0.9 RISE=3 TARG OUT VAL=0.9 FALL=2
+meas TRAN Iavg AVG I(VVDD)
 save all
 write "2NOR.raw"
 .endc"
