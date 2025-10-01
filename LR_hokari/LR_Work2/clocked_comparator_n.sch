@@ -1,0 +1,173 @@
+v {xschem version=3.4.7RC file_version=1.2}
+G {}
+K {}
+V {}
+S {}
+E {}
+N 240 -300 240 -220 {lab=#net1}
+N 400 -300 400 -220 {lab=#net2}
+N 400 -440 500 -440 {lab=COMPA}
+N 140 -440 240 -440 {lab=COMPB}
+N 240 -440 240 -360 {lab=COMPB}
+N 400 -440 400 -360 {lab=COMPA}
+N 240 -520 240 -500 {lab=VDD}
+N 400 -520 400 -500 {lab=VDD}
+N 400 -470 500 -470 {lab=VDD}
+N 140 -470 240 -470 {lab=VDD}
+N 190 -510 190 -470 {lab=VDD}
+N 140 -510 240 -510 {lab=VDD}
+N 400 -510 500 -510 {lab=VDD}
+N 450 -510 450 -470 {lab=VDD}
+N 500 -510 500 -500 {lab=VDD}
+N 140 -510 140 -500 {lab=VDD}
+N 340 -470 360 -470 {lab=COMPB}
+N 280 -470 300 -470 {lab=COMPA}
+N 300 -420 400 -420 {lab=COMPA}
+N 340 -190 360 -190 {lab=COMPB}
+N 280 -190 300 -190 {lab=COMPA}
+N 360 -330 360 -280 {lab=CLK}
+N 120 -280 360 -280 {lab=CLK}
+N 360 -280 540 -280 {lab=CLK}
+N 540 -470 540 -280 {lab=CLK}
+N 100 -470 100 -280 {lab=CLK}
+N 100 -280 120 -280 {lab=CLK}
+N 20 -280 100 -280 {lab=CLK}
+N 220 -190 240 -190 {lab=GND}
+N 400 -330 420 -330 {lab=GND}
+N 400 -190 420 -190 {lab=GND}
+N 280 -330 280 -280 {lab=CLK}
+N 220 -330 240 -330 {lab=GND}
+N 220 -330 220 -240 {lab=GND}
+N 220 -240 220 -140 {lab=GND}
+N 420 -330 420 -140 {lab=GND}
+N 220 -140 260 -140 {lab=GND}
+N 260 -140 260 -40 {lab=GND}
+N 260 -40 400 -40 {lab=GND}
+N 400 -60 400 -40 {lab=GND}
+N 380 -140 420 -140 {lab=GND}
+N 380 -140 380 -40 {lab=GND}
+N 240 -60 240 -40 {lab=GND}
+N 240 -40 260 -40 {lab=GND}
+N 240 -90 260 -90 {lab=GND}
+N 380 -90 400 -90 {lab=GND}
+N 240 -160 240 -120 {lab=#net3}
+N 400 -160 400 -120 {lab=#net4}
+N 160 -90 200 -90 {lab=INP}
+N 440 -90 480 -90 {lab=INM}
+N 240 -400 260 -400 {lab=COMPB}
+N 320 -400 340 -400 {lab=COMPB}
+N 260 -400 320 -400 {lab=COMPB}
+N 300 -470 300 -190 {lab=COMPA}
+N 340 -470 340 -190 {lab=COMPB}
+N 560 -420 620 -420 {lab=COMPA}
+N 540 -280 540 -230 {lab=CLK}
+N 400 -420 560 -420 {lab=COMPA}
+N 540 -230 620 -230 {lab=CLK}
+N 1000 -230 1200 -230 {lab=#net5}
+N 1320 -420 1340 -420 {lab=#net6}
+N 1290 -420 1290 -320 {lab=#net6}
+N 1340 -420 1360 -420 {lab=#net6}
+N 990 -230 1000 -230 {lab=#net5}
+N 1030 -310 1200 -310 {lab=CLK}
+N 1360 -420 1430 -420 {lab=#net6}
+N 1750 -420 1840 -420 {lab=OUT}
+N 1430 -380 1430 -350 {lab=GND}
+N 1420 -400 1430 -400 {lab=#net7}
+N 1430 -420 1450 -420 {lab=#net6}
+N 1430 -400 1450 -400 {lab=#net7}
+N 1430 -380 1450 -380 {lab=GND}
+N 860 -230 890 -230 {lab=CLK}
+N 1030 -480 1030 -460 {lab=#net5}
+N 1000 -480 1030 -480 {lab=#net5}
+N 1000 -480 1000 -280 {lab=#net5}
+N 890 -310 1030 -310 {lab=CLK}
+N 870 -310 870 -230 {lab=CLK}
+N 870 -310 890 -310 {lab=CLK}
+N 1030 -380 1030 -360 {lab=CLK}
+N 1410 -400 1420 -400 {lab=#net7}
+N 1310 -400 1310 -220 {lab=EN}
+N 1260 -420 1320 -420 {lab=#net6}
+N 1200 -230 1220 -230 {lab=#net5}
+N 1200 -310 1220 -310 {lab=CLK}
+N 1090 -420 1160 -420 {lab=#net8}
+N 1120 -270 1160 -270 {lab=#net8}
+N 1000 -280 1000 -230 {lab=#net5}
+N 1120 -330 1120 -270 {lab=#net8}
+N 1030 -360 1030 -310 {lab=CLK}
+N 1120 -420 1120 -330 {lab=#net8}
+N 1260 -270 1290 -270 {lab=#net6}
+N 1290 -320 1290 -270 {lab=#net6}
+N 1310 -220 1310 -90 {lab=EN}
+N 1290 -90 1310 -90 {lab=EN}
+N 620 -420 990 -420 {lab=COMPA}
+N 780 -230 860 -230 {lab=CLK}
+N 620 -230 780 -230 {lab=CLK}
+C {code_shown.sym} -130 20 0 0 {name=spice1 only_toplevel=false value="
+
+.inc /home/tororo/LR/T_mos_model.sp
+
+VVDD VDD 0 DC 3.3
+
+VINP INP 0 DC 1.60
+VINM INM 0 DC 3.3
+
+
+*VINP INP 0 pwl (0   0 100n 3.3 200n   0 300n 3.3 400n   0 500n 3.3)
+*VINM INM 0 pwl (0 3.3 100n   0 200n 3.3 300n   0 400n 3.3 500n 0)
+
+*VINP INP 0 pwl (0 2.5 100n 3.3 200n 2.5 300n 3.3 400n 2.5 500n 3.3)
+*VINM INM 0 pwl (0 3.3 100n 2.5 200n 3.3 300n 2.5 400n 3.3 500n 2.5)
+
+*VINP INP 0 pwl (0   0 100n 0.8 200n   0 300n 0.8 400n   0 500n 0.8)
+*VINM INM 0 pwl (0 0.8 100n   0 200n 0.8 300n   0 400n 0.8 500n 0)
+
+*VINP INP 0 pwl (0   0 100n 1.0 200n   0 300n 1.0 400n   0 500n 1.0)
+*VINM INM 0 pwl (0 1.0 100n   0 200n 1.0 300n   0 400n 1.0 500n 0)
+
+
+
+VCLK CLK 0 pulse(0 3.3 25n 1n 1n 300n 600n)
+ven EN 0 pulse(0 3.3 0n 1n 1n 200n 252n)
+
+.control
+tran 1n 600n
+
+plot v(OUT)
+plot v(COMPA)
+plot v(COMPB)
+
+
+*plot v(CLK)
+*plot v(INP)
+*plot v(INM)
+
+write "clocked_comparator_n.raw"
+
+.endc"}
+C {NMOS_MIN.sym} 280 -330 2 0 {name=M4 model=nch w=3.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {PMOS_MIN.sym} 280 -470 2 0 {name=M1 model=pch w=10.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1qqq}
+C {PMOS_MIN.sym} 100 -470 0 0 {name=M2 model=pch w=10.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {NMOS_MIN.sym} 360 -330 0 0 {name=M6 model=nch w=3.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {NMOS_MIN.sym} 360 -190 0 0 {name=M7 model=nch w=3.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {NMOS_MIN.sym} 280 -190 2 0 {name=M8 model=nch w=3.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {vdd.sym} 240 -520 0 0 {name=l2 lab=VDD}
+C {vdd.sym} 400 -520 0 0 {name=l3 lab=VDD}
+C {gnd.sym} 320 -40 0 0 {name=l1 lab=GND}
+C {NMOS_MIN.sym} 440 -90 2 0 {name=M9 model=nch w=3.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {NMOS_MIN.sym} 200 -90 0 0 {name=M10 model=nch w=3.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {ipin.sym} 160 -90 0 0 {name=p1 lab=INP}
+C {ipin.sym} 480 -90 2 0 {name=p6 lab=INM}
+C {ipin.sym} 20 -280 0 0 {name=p7 lab=CLK}
+C {PMOS_MIN.sym} 540 -470 2 0 {name=M3 model=pch w=10.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1qqq}
+C {PMOS_MIN.sym} 360 -470 0 0 {name=M5 model=pch w=10.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {lab_wire.sym} 300 -430 0 0 {name=p3 sig_type=std_logic lab=COMPA}
+C {lab_wire.sym} 340 -360 0 0 {name=p4 sig_type=std_logic lab=COMPB}
+C {opin.sym} 1840 -420 0 0 {name=p8 lab=OUT}
+C {ipin.sym} 1290 -90 0 0 {name=p9 lab=EN}
+C {gnd.sym} 1430 -350 0 0 {name=l4 lab=GND}
+C {LR_Work2/symbol/INVERTER.sym} 1400 -420 0 0 {name=x2}
+C {LR_Work2/symbol/INVERTER.sym} 1130 -230 0 0 {name=x3}
+C {LR_Work2/symbol/INVERTER.sym} 1550 -400 0 0 {name=x10}
+C {LR_Work2/symbol/CLOCKEDINVERTER.sym} 1150 -420 0 0 {name=x11}
+C {LR_Work2/symbol/CLOCKEDINVERTER.sym} 1100 -270 2 0 {name=x12}
+C {LR_Work2/symbol/SELECTOR.sym} 1600 -400 0 0 {name=x13}
