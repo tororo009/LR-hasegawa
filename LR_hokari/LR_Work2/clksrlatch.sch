@@ -41,11 +41,11 @@ C {code_shown.sym} -10 -200 0 0 {name=spice only_toplevel=false value="
 
 VVDD VDD 0 DC 3.3
 
-VR R 0 DC 0
-VD D 0 pulse(0 3.3 25n 1n 1n 100n 200n)
+VR R 0 DC 3.3
+VD D 0 pulse(0 3.3 0n 1n 1n 100n 200n)
 
 
-VCLK CLK 0 pulse(0 3.3 0n 1n 1n 50n 100n)
+VCLK CLK 0 pulse(0 3.3 25n 1n 1n 50n 100n)
 *VCLK CLK 0 pulse(0 3.3 0n 1n 1n 12.5n 25n)
 
 .control

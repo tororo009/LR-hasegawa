@@ -24,13 +24,13 @@ N 340 -80 360 -80 {lab=IN}
 N 280 -180 360 -180 {lab=P}
 N 290 180 360 180 {lab=N}
 N 280 -0 340 -0 {lab=IN}
-C {PMOS_MIN.sym} 360 -80 0 0 {name=M3 model=pch w=10.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
-C {NMOS_MIN.sym} 360 80 0 0 {name=M4 model=nch w=3.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {PMOS_MIN.sym} 360 -80 0 0 {name=M3 model=pch w=1u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {NMOS_MIN.sym} 360 80 0 0 {name=M4 model=nch w=1u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
 C {vdd.sym} 400 -230 0 1 {name=l1 lab=VDD}
 C {gnd.sym} 400 240 0 1 {name=l2 lab=GND}
 C {opin.sym} 480 0 0 0 {name=p5 lab=OUT}
 C {ipin.sym} 280 0 0 0 {name=p6 lab=IN}
 C {ipin.sym} 280 -180 0 0 {name=p7 lab=P}
 C {ipin.sym} 290 180 0 0 {name=p8 lab=N}
-C {PMOS_MIN.sym} 360 -180 0 0 {name=M5 model=pch w=10.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
-C {NMOS_MIN.sym} 360 180 0 0 {name=M7 model=nch w=3.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {PMOS_MIN.sym} 360 -180 0 0 {name=M5 model=pch w=3u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {NMOS_MIN.sym} 360 180 0 0 {name=M7 model=nch w=1u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
