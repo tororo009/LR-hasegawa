@@ -30,10 +30,10 @@ N 100 -110 290 -110 {lab=IN2}
 N 200 -310 200 -110 {lab=IN2}
 N 160 -370 380 -370 {lab=IN1}
 N 160 -370 160 -210 {lab=IN1}
-C {PMOS_MIN.sym} 200 -310 0 0 {name=M1 model=pch w=10.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
-C {NMOS_MIN.sym} 290 -110 0 0 {name=M2 model=nch w=7u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
-C {PMOS_MIN.sym} 380 -370 0 0 {name=M3 model=pch w=10.5u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
-C {NMOS_MIN.sym} 290 -210 0 0 {name=M4 model=nch w=7u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {PMOS_MIN.sym} 200 -310 0 0 {name=M1 model=pch w=3u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {NMOS_MIN.sym} 290 -110 0 0 {name=M2 model=nch w=2u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {PMOS_MIN.sym} 380 -370 0 0 {name=M3 model=pch w=3u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
+C {NMOS_MIN.sym} 290 -210 0 0 {name=M4 model=nch w=2u l=0.35u as=0 ps=0 ad=0 pd=0 m=1}
 C {vdd.sym} 330 -445 0 0 {name=l2 lab=VDD}
 C {ipin.sym} 100 -210 0 0 {name=p1 lab=IN1}
 C {ipin.sym} 100 -110 0 0 {name=p2 lab=IN2}

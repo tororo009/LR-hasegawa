@@ -18,8 +18,8 @@ N -60 0 20 0 {lab=IN}
 N 60 0 140 0 {lab=OUT}
 N 80 -120 80 -110 {lab=VDD}
 N 80 110 80 120 {lab=GND}
-C {PMOS_MIN.sym} 20 -80 0 0 {name=M6 model=pch w=3u l=0.35u as=5.6p ps=9u ad=5.6p pd=9u m=1}
-C {NMOS_MIN.sym} 20 80 0 0 {name=M8 model=nch w=1u l=0.35u as=2.8p ps=5.5u ad=2.8p pd=5.5u m=1}
+C {PMOS_MIN.sym} 20 -80 0 0 {name=M6 model=pch w=3u l=0.35u as=5.6p ps=9u ad=5.6p pd=9u m=18}
+C {NMOS_MIN.sym} 20 80 0 0 {name=M8 model=nch w=1u l=0.35u as=2.8p ps=5.5u ad=2.8p pd=5.5u m=18}
 C {vdd.sym} 60 -140 0 1 {name=l4 lab=VDD}
 C {gnd.sym} 60 140 0 1 {name=l5 lab=GND}
 C {opin.sym} 140 0 0 0 {name=p4 lab=OUT}
