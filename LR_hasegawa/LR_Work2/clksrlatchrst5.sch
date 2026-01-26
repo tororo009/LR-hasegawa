@@ -25,17 +25,12 @@ N -2120 90 -2070 90 {lab=S}
 N -1980 100 -1950 100 {lab=#net13}
 N -1850 100 -1800 100 {lab=#net14}
 N -2150 110 -2070 110 {lab=#net15}
-N -2270 -90 -2190 -90 {lab=#net11}
-N -2250 -90 -2250 110 {lab=#net11}
 N -1710 90 -1600 90 {lab=#net16}
-N -2430 -90 -2400 -90 {lab=#net17}
-N -2570 -80 -2520 -80 {lab=PD}
-N -2570 -100 -2520 -100 {lab=RST}
-N -2300 -90 -2270 -90 {lab=#net11}
-N -2570 -80 -2570 0 {lab=PD}
-N -2570 0 -2070 0 {lab=PD}
-N -590 -60 -540 -60 {lab=#net18}
-N -590 80 -540 80 {lab=#net19}
+N -2430 0 -2400 0 {lab=#net15}
+N -2570 10 -2520 10 {lab=PD}
+N -2570 -10 -2520 -10 {lab=RST}
+N -590 -60 -540 -60 {lab=#net17}
+N -590 80 -540 80 {lab=#net18}
 N -440 80 -380 80 {lab=Q}
 N -440 -60 -380 -60 {lab=XQ}
 N -380 140 -380 180 {lab=GND}
@@ -44,7 +39,13 @@ N -1510 80 -1090 80 {lab=#net2}
 N -1510 -60 -1090 -60 {lab=#net1}
 N -1600 40 -1020 -60 {lab=#net1}
 N -1600 -20 -1020 80 {lab=#net2}
-C {ipin.sym} -2570 -100 0 0 {name=p1 lab=RST}
+N -2250 -90 -2190 -90 {lab=#net11}
+N -2300 -0 -2250 -0 {lab=#net11}
+N -2250 -0 -2070 0 {lab=#net11}
+N -2250 -90 -2250 -0 {lab=#net11}
+N -2420 -0 -2420 110 {lab=#net15}
+N -2420 110 -2150 110 {lab=#net15}
+C {ipin.sym} -2570 -10 0 0 {name=p1 lab=RST}
 C {ipin.sym} -2120 90 0 0 {name=p2 lab=S}
 C {ipin.sym} -2120 20 0 0 {name=p3 lab=CLK}
 C {LR_Work2/NAND2.sym} -1650 -70 0 0 {name=x1}
@@ -54,14 +55,13 @@ C {LR_Work2/NAND2.sym} -1450 80 0 0 {name=x4}
 C {ipin.sym} -2120 -70 0 0 {name=p6 lab=R}
 C {LR_Work2/NAND2.sym} -1920 10 0 0 {name=x5}
 C {LR_Work2/symbol/INVERTER.sym} -730 80 0 0 {name=x6}
-C {ipin.sym} -2570 0 0 0 {name=p7 lab=PD}
+C {ipin.sym} -2570 10 0 0 {name=p7 lab=PD}
 C {LR_Work2/symbol/INVERTER.sym} -1710 10 0 0 {name=x7}
 C {LR_Work2/symbol/INVERTER.sym} -730 -60 0 0 {name=x9}
 C {LR_Work2/NAND2.sym} -1920 -80 0 0 {name=x11}
 C {LR_Work2/symbol/INVERTER.sym} -1710 -80 0 0 {name=x12}
 C {LR_Work2/NOR2.sym} -1920 100 0 0 {name=x13}
 C {LR_Work2/symbol/INVERTER.sym} -1710 100 0 0 {name=x14}
-C {LR_Work2/symbol/INVERTER.sym} -2010 110 0 0 {name=x15}
 C {code_shown.sym} -270 -310 0 0 {name=spice1 only_toplevel=false value="
 
 .inc /home/tororo/Xschem/osu_mos_model.sp
@@ -89,14 +89,14 @@ tran 1n 1000n
 meas TRAN Iavg AVG I(VVDD)
 
 meas TRAN tplh TRIG CLK VAL=1.65 RISE=2 TARG Q VAL=1.65 RISE=1
-meas TRAN tphl TRIG CLK VAL=1.65 RISE=1 TARG Q VAL=1.65 FALL=1
+meas TRAN tphl TRIG CLK VAL=1.65 RISE=3 TARG Q VAL=1.65 FALL=1
 
 set file=sim.log
-write "clksrlatch.raw"
+write "clksrlatchrst5.raw"
 
 .endc"}
-C {LR_Work2/NAND2.sym} -2370 -90 0 0 {name=x16}
-C {LR_Work2/symbol/INVERTER_MIN.sym} -2160 -90 0 0 {name=x18}
+C {LR_Work2/NAND2.sym} -2370 0 0 0 {name=x16}
+C {LR_Work2/symbol/INVERTER_MIN.sym} -2160 0 0 0 {name=x18}
 C {LR_Work2/symbol/INVERTER3.sym} -590 -60 0 0 {name=x8}
 C {LR_Work2/symbol/INVERTER3.sym} -590 80 0 0 {name=x10}
 C {LR_Work2/symbol/INVERTER9.sym} -450 -60 0 0 {name=x17}

@@ -4,71 +4,68 @@ K {}
 V {}
 S {}
 E {}
-N -1600 40 -1600 70 {lab=#net1}
-N -1600 -50 -1600 -20 {lab=#net2}
-N -1710 -70 -1600 -70 {lab=#net3}
-N -1800 -60 -1800 80 {lab=#net4}
-N -1850 10 -1800 10 {lab=#net4}
-N -1980 10 -1950 10 {lab=#net5}
+N -1800 -60 -1800 80 {lab=#net1}
+N -1850 10 -1800 10 {lab=#net1}
+N -1980 10 -1950 10 {lab=#net2}
 N -2120 20 -2070 20 {lab=CLK}
-N -1090 80 -970 80 {lab=#net2}
-N -1090 -60 -970 -60 {lab=#net1}
-N -870 -60 -830 -60 {lab=#net6}
-N -870 80 -830 80 {lab=#net7}
-N -730 -60 -690 -60 {lab=#net8}
-N -730 80 -690 80 {lab=#net9}
-N -1980 -80 -1950 -80 {lab=#net10}
-N -2120 -70 -2070 -70 {lab=R}
-N -2190 -90 -2070 -90 {lab=#net11}
-N -1850 -80 -1800 -80 {lab=#net12}
-N -2120 90 -2070 90 {lab=S}
-N -1980 100 -1950 100 {lab=#net13}
-N -1850 100 -1800 100 {lab=#net14}
-N -2150 110 -2070 110 {lab=#net15}
-N -2270 -90 -2190 -90 {lab=#net11}
-N -2250 -90 -2250 110 {lab=#net11}
-N -1710 90 -1600 90 {lab=#net16}
-N -2430 -90 -2400 -90 {lab=#net17}
+N -1090 80 -970 80 {lab=#net3}
+N -1090 -60 -970 -60 {lab=#net4}
+N -870 -60 -830 -60 {lab=#net5}
+N -870 80 -830 80 {lab=#net6}
+N -730 -60 -690 -60 {lab=#net7}
+N -730 80 -690 80 {lab=#net8}
+N -2430 -90 -2400 -90 {lab=#net9}
 N -2570 -80 -2520 -80 {lab=PD}
 N -2570 -100 -2520 -100 {lab=RST}
-N -2300 -90 -2270 -90 {lab=#net11}
 N -2570 -80 -2570 0 {lab=PD}
 N -2570 0 -2070 0 {lab=PD}
-N -590 -60 -540 -60 {lab=#net18}
-N -590 80 -540 80 {lab=#net19}
+N -590 -60 -540 -60 {lab=#net10}
+N -590 80 -540 80 {lab=#net11}
 N -440 80 -380 80 {lab=Q}
 N -440 -60 -380 -60 {lab=XQ}
 N -380 140 -380 180 {lab=GND}
 N -380 -0 -380 40 {lab=GND}
-N -1510 80 -1090 80 {lab=#net2}
-N -1510 -60 -1090 -60 {lab=#net1}
-N -1600 40 -1020 -60 {lab=#net1}
-N -1600 -20 -1020 80 {lab=#net2}
+N -1270 -60 -1090 -60 {lab=#net4}
+N -1270 80 -1090 80 {lab=#net3}
+N -1360 -50 -1360 -20 {lab=#net3}
+N -1360 40 -1360 60 {lab=#net4}
+N -1360 40 -1040 -60 {lab=#net4}
+N -1360 -20 -1040 80 {lab=#net3}
+N -1380 -70 -1360 -70 {lab=#net12}
+N -1500 -70 -1480 -70 {lab=#net13}
+N -1500 90 -1480 90 {lab=#net14}
+N -1380 90 -1360 90 {lab=#net15}
+N -1360 60 -1360 70 {lab=#net4}
+N -2410 -90 -2410 110 {lab=#net9}
+N -1710 80 -1590 80 {lab=#net16}
+N -1710 -60 -1590 -60 {lab=#net17}
+N -2120 90 -1800 90 {lab=S}
+N -2120 -70 -1800 -70 {lab=R}
+N -2300 -90 -1590 -90 {lab=#net18}
+N -1590 -90 -1590 -80 {lab=#net18}
+N -2410 110 -2410 140 {lab=#net9}
+N -2410 140 -1590 140 {lab=#net9}
+N -1590 100 -1590 140 {lab=#net9}
 C {ipin.sym} -2570 -100 0 0 {name=p1 lab=RST}
 C {ipin.sym} -2120 90 0 0 {name=p2 lab=S}
 C {ipin.sym} -2120 20 0 0 {name=p3 lab=CLK}
-C {LR_Work2/NAND2.sym} -1650 -70 0 0 {name=x1}
-C {LR_Work2/NAND2.sym} -1650 90 0 0 {name=x2}
-C {LR_Work2/NAND2.sym} -1450 -60 0 0 {name=x3}
-C {LR_Work2/NAND2.sym} -1450 80 0 0 {name=x4}
+C {LR_Work2/NAND2.sym} -1650 -60 0 0 {name=x1}
+C {LR_Work2/NAND2.sym} -1650 80 0 0 {name=x2}
+C {LR_Work2/NAND2.sym} -1210 -60 0 0 {name=x3}
+C {LR_Work2/NAND2.sym} -1210 80 0 0 {name=x4}
 C {ipin.sym} -2120 -70 0 0 {name=p6 lab=R}
 C {LR_Work2/NAND2.sym} -1920 10 0 0 {name=x5}
 C {LR_Work2/symbol/INVERTER.sym} -730 80 0 0 {name=x6}
 C {ipin.sym} -2570 0 0 0 {name=p7 lab=PD}
 C {LR_Work2/symbol/INVERTER.sym} -1710 10 0 0 {name=x7}
 C {LR_Work2/symbol/INVERTER.sym} -730 -60 0 0 {name=x9}
-C {LR_Work2/NAND2.sym} -1920 -80 0 0 {name=x11}
-C {LR_Work2/symbol/INVERTER.sym} -1710 -80 0 0 {name=x12}
-C {LR_Work2/NOR2.sym} -1920 100 0 0 {name=x13}
-C {LR_Work2/symbol/INVERTER.sym} -1710 100 0 0 {name=x14}
-C {LR_Work2/symbol/INVERTER.sym} -2010 110 0 0 {name=x15}
-C {code_shown.sym} -270 -310 0 0 {name=spice1 only_toplevel=false value="
+C {code_shown.sym} -270 -330 0 0 {name=spice1 only_toplevel=false value="
 
 .inc /home/tororo/Xschem/osu_mos_model.sp
 
 VVDD VDD 0 DC 3.3
 
-VRST RST 0 pulse(0 3.3 0n 1n 1n 700n 800n)
+VRST RST 0 pulse(0 3.3 0n 1n 1n 500n 600n)
 *VRST RST 0 DC 3.3
 VS S 0 pulse(0 3.3 100n 1n 1n 100n 200n)
 VR R 0 pulse(0 3.3 0n 1n 1n 100n 200n)
@@ -89,10 +86,10 @@ tran 1n 1000n
 meas TRAN Iavg AVG I(VVDD)
 
 meas TRAN tplh TRIG CLK VAL=1.65 RISE=2 TARG Q VAL=1.65 RISE=1
-meas TRAN tphl TRIG CLK VAL=1.65 RISE=1 TARG Q VAL=1.65 FALL=1
+meas TRAN tphl TRIG CLK VAL=1.65 RISE=3 TARG Q VAL=1.65 FALL=1
 
 set file=sim.log
-write "clksrlatch.raw"
+write "clksrlatchrst4.raw"
 
 .endc"}
 C {LR_Work2/NAND2.sym} -2370 -90 0 0 {name=x16}
@@ -117,3 +114,7 @@ m=1
 value=1p
 footprint=1206
 device=ceramic}
+C {LR_Work2/NAND2.sym} -1440 -70 0 0 {name=x22}
+C {LR_Work2/symbol/INVERTER.sym} -1240 -70 0 0 {name=x23}
+C {LR_Work2/symbol/INVERTER.sym} -1240 90 0 0 {name=x25}
+C {LR_Work2/NOR2.sym} -1440 90 0 0 {name=x24}

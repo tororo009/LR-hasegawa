@@ -40,10 +40,15 @@ N -440 80 -380 80 {lab=Q}
 N -440 -60 -380 -60 {lab=XQ}
 N -380 140 -380 180 {lab=GND}
 N -380 -0 -380 40 {lab=GND}
-N -1510 80 -1090 80 {lab=#net2}
 N -1510 -60 -1090 -60 {lab=#net1}
 N -1600 40 -1020 -60 {lab=#net1}
 N -1600 -20 -1020 80 {lab=#net2}
+N -1350 80 -1330 80 {lab=#net20}
+N -1510 80 -1440 70 {lab=#net21}
+N -1230 80 -1090 80 {lab=#net2}
+N -2250 110 -2250 180 {lab=#net11}
+N -2250 180 -1440 180 {lab=#net11}
+N -1440 90 -1440 180 {lab=#net11}
 C {ipin.sym} -2570 -100 0 0 {name=p1 lab=RST}
 C {ipin.sym} -2120 90 0 0 {name=p2 lab=S}
 C {ipin.sym} -2120 20 0 0 {name=p3 lab=CLK}
@@ -68,7 +73,7 @@ C {code_shown.sym} -270 -310 0 0 {name=spice1 only_toplevel=false value="
 
 VVDD VDD 0 DC 3.3
 
-VRST RST 0 pulse(0 3.3 0n 1n 1n 700n 800n)
+VRST RST 0 pulse(0 3.3 0n 1n 1n 500n 600n)
 *VRST RST 0 DC 3.3
 VS S 0 pulse(0 3.3 100n 1n 1n 100n 200n)
 VR R 0 pulse(0 3.3 0n 1n 1n 100n 200n)
@@ -92,7 +97,7 @@ meas TRAN tplh TRIG CLK VAL=1.65 RISE=2 TARG Q VAL=1.65 RISE=1
 meas TRAN tphl TRIG CLK VAL=1.65 RISE=1 TARG Q VAL=1.65 FALL=1
 
 set file=sim.log
-write "clksrlatch.raw"
+write "clksrlatchrst2.raw"
 
 .endc"}
 C {LR_Work2/NAND2.sym} -2370 -90 0 0 {name=x16}
@@ -117,3 +122,5 @@ m=1
 value=1p
 footprint=1206
 device=ceramic}
+C {LR_Work2/NAND2.sym} -1290 80 0 0 {name=x22}
+C {LR_Work2/symbol/INVERTER.sym} -1090 80 0 0 {name=x23}
