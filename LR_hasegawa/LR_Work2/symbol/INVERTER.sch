@@ -18,26 +18,9 @@ N -60 0 20 0 {lab=IN}
 N 60 0 140 0 {lab=#net1}
 N 80 -120 80 -110 {lab=VDD}
 N 80 110 80 120 {lab=GND}
-N 140 -80 140 80 {lab=#net1}
-N 180 -50 180 50 {lab=OUT}
-N 180 80 200 80 {lab=GND}
-N 180 -80 200 -80 {lab=VDD}
-N 200 -110 200 -80 {lab=VDD}
-N 180 -120 200 -120 {lab=VDD}
-N 200 80 200 110 {lab=GND}
-N 180 120 200 120 {lab=GND}
-N 180 -140 180 -110 {lab=VDD}
-N 180 110 180 140 {lab=GND}
-N 200 -120 200 -110 {lab=VDD}
-N 200 110 200 120 {lab=GND}
-N 180 -0 250 -0 {lab=OUT}
 C {PMOS_MIN.sym} 20 -80 0 0 {name=M6 model=pch w=2u l=0.35u as=5.6p ps=9u ad=5.6p pd=9u m=1}
 C {NMOS_MIN.sym} 20 80 0 0 {name=M8 model=nch w=1u l=0.35u as=2.8p ps=5.5u ad=2.8p pd=5.5u m=1}
 C {vdd.sym} 60 -140 0 1 {name=l4 lab=VDD}
 C {gnd.sym} 60 140 0 1 {name=l5 lab=GND}
-C {opin.sym} 250 0 0 0 {name=p4 lab=OUT}
+C {opin.sym} 140 0 0 0 {name=p4 lab=OUT}
 C {ipin.sym} -60 0 0 0 {name=p1 lab=IN}
-C {PMOS_MIN.sym} 140 -80 0 0 {name=M1 model=pch w=2u l=0.35u as=5.6p ps=9u ad=5.6p pd=9u m=3}
-C {NMOS_MIN.sym} 140 80 0 0 {name=M2 model=nch w=1u l=0.35u as=2.8p ps=5.5u ad=2.8p pd=5.5u m=3}
-C {vdd.sym} 180 -140 0 1 {name=l1 lab=VDD}
-C {gnd.sym} 180 140 0 1 {name=l2 lab=GND}
