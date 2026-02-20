@@ -1,0 +1,12 @@
+** sch_path: /home/tororo/LR/LR_hasegawa/LR_Work2/symbol/INVERTER13.sch
+**.subckt INVERTER13 OUT IN
+*.opin OUT
+*.ipin IN
+M6 net1 IN VDD VDD pch w=2u l=0.35u as=5.6p ps=9u ad=5.6p pd=9u m=1
+M8 net1 IN GND GND nch w=1u l=0.35u as=2.8p ps=5.5u ad=2.8p pd=5.5u m=1
+M1 OUT net1 VDD VDD pch w=2u l=0.35u as=5.6p ps=9u ad=5.6p pd=9u m=3
+M2 OUT net1 GND GND nch w=1u l=0.35u as=2.8p ps=5.5u ad=2.8p pd=5.5u m=3
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end
