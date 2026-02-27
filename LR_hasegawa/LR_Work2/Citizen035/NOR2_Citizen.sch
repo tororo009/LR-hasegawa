@@ -18,7 +18,7 @@ N 420 -25 420 -20 {lab=OUT}
 N 420 10 440 10 {lab=GND}
 N 420 -40 440 -40 {lab=OUT}
 N 240 70 260 70 {lab=GND}
-N 100 -210 290 -210 {lab=IN1}
+N 100 -210 290 -210 {lab=#net2}
 N 100 -110 290 -110 {lab=IN2}
 N 160 10 380 10 {lab=IN2}
 N 240 120 420 120 {lab=GND}
@@ -32,14 +32,14 @@ N 330 -250 330 -240 {lab=VDD}
 N 330 -280 330 -250 {lab=VDD}
 N 330 -260 340 -260 {lab=VDD}
 N 340 -260 340 -110 {lab=VDD}
-N 200 -210 200 70 {lab=IN1}
+N 200 -210 200 70 {lab=#net2}
 N 160 -110 160 10 {lab=IN2}
 C {vdd.sym} 330 -275 0 0 {name=l2 lab=VDD}
-C {ipin.sym} 100 -210 0 0 {name=p1 lab=IN1}
-C {ipin.sym} 100 -110 0 0 {name=p2 lab=IN2}
 C {gnd.sym} 330 140 0 0 {name=l1 lab=GND}
-C {opin.sym} 460 -40 0 0 {name=p3 lab=OUT}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/PMOS_MIN.sym} 290 -210 0 0 {name=M5 model=pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=1}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/NMOS_MIN.sym} 380 10 0 0 {name=M6 model=nch w=2.4u l=0.4u as=0 ps=0 ad=0 pd=0 m=1}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/NMOS_MIN.sym} 200 70 0 0 {name=M7 model=nch w=2.4u l=0.18u as=0 ps=0 ad=0 pd=0 m=1}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/PMOS_MIN.sym} 290 -110 0 0 {name=M8 model=pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=1}
+C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/iopin.sym} 100 -110 0 0 {name=p4 lab=IN2}
+C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/iopin.sym} 100 -210 0 0 {name=p5 lab=IN1}
+C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/iopin.sym} 460 -40 0 0 {name=p6 lab=OUT}
