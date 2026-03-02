@@ -5,18 +5,12 @@ V {}
 S {}
 F {}
 E {}
-N -220 0 -160 0 {lab=#net1}
-N -60 -0 20 0 {lab=#net2}
-N 120 0 210 0 {lab=#net3}
 N -350 0 -330 -0 {lab=IN}
 N -330 -0 -320 0 {lab=IN}
-N 310 -0 450 -0 {lab=OUT}
+N -220 0 450 0 {lab=OUT}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/ipin.sym} -340 0 0 0 {name=p1 lab=IN}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/opin.sym} 450 0 0 0 {name=p2 lab=OUT}
 C {work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER_Citizen.sym} -80 0 0 0 {name=x1}
-C {work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER3_Citizen.sym} 80 0 0 0 {name=x2}
-C {work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER9_Citizen.sym} 260 0 0 0 {name=x3}
-C {work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER27_Citizen.sym} 450 0 0 0 {name=x4}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/code.sym} 350 -230 0 0 {name=s1 only_toplevel=false value=blabla}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/code_shown.sym} 510 -220 0 0 {name=s2 only_toplevel=false value="
 

@@ -1,0 +1,17 @@
+* Created by KLayout
+
+* cell invbuf
+* pin OUT
+* pin GND
+* pin IN
+* pin VDD
+.SUBCKT invbuf 1 2 3 4
+* net 1 OUT
+* net 2 GND
+* net 3 IN
+* net 4 VDD
+* device instance $1 r0 *1 39.63,3.38 NMOS
+M$1 1 3 2 2 NMOS L=0.4U W=1.2U AS=1.62P AD=1.62P PS=5.1U PD=5.1U
+* device instance $2 r270 *1 39.58,13.48 PMOS
+M$2 4 3 1 4 PMOS L=0.4U W=3.6U AS=3.42P AD=3.42P PS=10.5U PD=10.5U
+.ENDS invbuf

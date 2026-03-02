@@ -36,12 +36,6 @@ VIN2 IN2 0 pulse(0 3.3 100n 1n 1n 100n 200n)
 .control
 tran 1n 1000n
 
-meas TRAN Iavg AVG I(VVDD)
-
-meas TRAN tplh TRIG CLK VAL=1.65 RISE=2 TARG Q VAL=1.65 RISE=1
-meas TRAN tphl TRIG CLK VAL=1.65 RISE=3 TARG Q VAL=1.65 FALL=1
-
-set file=sim.log
 write "buffer_citizen#1.raw"
 
 .endc"}
@@ -51,11 +45,11 @@ C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/iopin.sym}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/iopin.sym} -710 -30 0 0 {name=p4 lab=IN1}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/cap.sym} -610 -40 1 0 {name=C1
 m=1
-value=1p
+value=105f
 footprint=1206
 device=ceramic}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/cap.sym} -610 30 1 0 {name=C2
 m=1
-value=1p
+value=105f
 footprint=1206
 device=ceramic}

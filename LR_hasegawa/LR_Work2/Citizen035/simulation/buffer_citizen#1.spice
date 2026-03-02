@@ -1,15 +1,11 @@
-** sch_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/neuCMOS2_citizen#1.sch
-**.subckt neuCMOS2_citizen#1 OUT IN2 IN1
-*.iopin OUT
-*.iopin IN2
-*.iopin IN1
-x1 net4 net1 INVERTER_Citizen
+** sch_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/buffer_citizen#1.sch
+**.subckt buffer_citizen#1 IN OUT
+*.ipin IN
+*.opin OUT
+x1 IN net1 INVERTER_Citizen
 x2 net1 net2 INVERTER3_Citizen
 x3 net2 net3 INVERTER9_Citizen
 x4 net3 OUT INVERTER27_Citizen
-x5 net5 net4 INVERTER_Citizen
-C1 net5 IN1 105f m=1
-C2 net5 IN2 105f m=1
 **** begin user architecture code
 
 blabla
@@ -19,8 +15,7 @@ blabla
 
 VVDD VDD 0 DC 3.3
 
-VIN1 IN1 0 pulse(0 3.3 100n 1n 1n 100n 200n)
-VIN2 IN2 0 pulse(0 3.3 100n 1n 1n 100n 200n)
+VIN IN 0 pulse(0 3.3 100n 1n 1n 100n 200n)
 
 *Cload Q 0 1p
 *Cload XQ 0 1p
@@ -28,7 +23,6 @@ VIN2 IN2 0 pulse(0 3.3 100n 1n 1n 100n 200n)
 
 .control
 tran 1n 1000n
-
 write buffer_citizen#1.raw
 
 .endc
@@ -43,7 +37,7 @@ write buffer_citizen#1.raw
 *.iopin OUT
 *.iopin IN
 M1 OUT IN GND GND nch w=1.2u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
-M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
+M2 OUT IN VDD VDD pch w=3.6u l=1.2u as=0 ps=0 ad=0 pd=0 m=1
 .ends
 
 
@@ -54,7 +48,7 @@ M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
 *.iopin OUT
 *.iopin IN
 M1 OUT IN GND GND nch w=1.2u l=0.4u as=0 ps=0 ad=0 pd=0 m=3
-M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=3
+M2 OUT IN VDD VDD pch w=3.6u l=1.2u as=0 ps=0 ad=0 pd=0 m=3
 .ends
 
 
@@ -65,7 +59,7 @@ M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=3
 *.iopin OUT
 *.iopin IN
 M1 OUT IN GND GND nch w=1.2u l=0.4u as=0 ps=0 ad=0 pd=0 m=9
-M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=9
+M2 OUT IN VDD VDD pch w=3.6u l=1.2u as=0 ps=0 ad=0 pd=0 m=9
 .ends
 
 

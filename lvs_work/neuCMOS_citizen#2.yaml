@@ -1,0 +1,5 @@
+---
+target: neuCMOS_citizen#2
+reference: lvs_work/neuCMOS_citizen#2_reference.cir.txt
+netlist: "/home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/simulation/neuCMOS2_citizen#1.spice"
+schematic: "/home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/simulation/neuCMOS2_citizen#1.spice"

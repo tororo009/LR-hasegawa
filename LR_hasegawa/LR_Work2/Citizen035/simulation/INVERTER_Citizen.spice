@@ -1,0 +1,10 @@
+** sch_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER_Citizen.sch
+**.subckt INVERTER_Citizen IN OUT
+*.iopin OUT
+*.iopin IN
+M1 OUT IN GND GND nch w=1.2u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
+M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end

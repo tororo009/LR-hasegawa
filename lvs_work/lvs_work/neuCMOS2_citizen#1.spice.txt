@@ -1,5 +1,5 @@
-** sch_path: /home/tororo009/work/LR_hasegawa/LR_hasegawa/LR_Work2/Citizen035/NAND2_citizen#2.sch
-**.subckt NAND2_citizen#2 OUT IN2 IN1
+** sch_path: /home/tororo009/work/LR_hasegawa/LR_hasegawa/LR_Work2/Citizen035/neuCMOS2_citizen#1.sch
+**.subckt neuCMOS2_citizen#1 OUT IN2 IN1
 *.iopin OUT
 *.iopin IN2
 *.iopin IN1
@@ -7,7 +7,9 @@ x1 net4 net1 INVERTER_Citizen
 x2 net1 net2 INVERTER3_Citizen
 x3 net2 net3 INVERTER9_Citizen
 x4 net3 OUT INVERTER27_Citizen
-x5 net4 IN1 IN2 NAND2_Citizen
+x5 net5 net4 INVERTER_Citizen
+C1 net5 IN1 105f m=1
+C2 net5 IN2 105f m=1
 **** begin user architecture code
 
 blabla
@@ -75,20 +77,6 @@ M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=9
 *.iopin OUT
 M1 OUT IN GND GND nch w=1.2u l=0.4u as=0 ps=0 ad=0 pd=0 m=27
 M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=27
-.ends
-
-
-* expanding   symbol:  work/LR_hasegawa/LR_hasegawa/LR_Work2/Citizen035/NAND2_Citizen.sym # of pins=3
-** sym_path: /home/tororo009/work/LR_hasegawa/LR_hasegawa/LR_Work2/Citizen035/NAND2_Citizen.sym
-** sch_path: /home/tororo009/work/LR_hasegawa/LR_hasegawa/LR_Work2/Citizen035/NAND2_Citizen.sch
-.subckt NAND2_Citizen OUT IN1 IN2
-*.iopin OUT
-*.iopin IN1
-*.iopin IN2
-M5 net1 IN2 GND GND nch w=2.4u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
-M6 OUT IN1 net1 GND nch w=2.4u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
-M7 OUT IN2 VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
-M8 OUT IN1 VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
 .ends
 
 .GLOBAL VDD

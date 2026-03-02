@@ -8,9 +8,9 @@ x2 net1 net2 INVERTER3_Citizen
 x3 net2 net3 INVERTER9_Citizen
 x4 net3 OUT INVERTER27_Citizen
 x5 net5 net4 INVERTER_Citizen
-C1 net5 IN1 105fp m=1
-C2 net5 IN2 105fp m=1
-C3 net5 GND 105fp m=1
+C1 net5 IN1 105f m=1
+C2 net5 IN2 105f m=1
+C3 net5 GND 105f m=1
 **** begin user architecture code
 
 blabla
@@ -44,7 +44,7 @@ write buffer_citizen#1.raw
 *.iopin OUT
 *.iopin IN
 M1 OUT IN GND GND nch w=1.2u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
-M2 OUT IN VDD VDD pch w=3.6u l=1.2u as=0 ps=0 ad=0 pd=0 m=1
+M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=1
 .ends
 
 
@@ -55,7 +55,7 @@ M2 OUT IN VDD VDD pch w=3.6u l=1.2u as=0 ps=0 ad=0 pd=0 m=1
 *.iopin OUT
 *.iopin IN
 M1 OUT IN GND GND nch w=1.2u l=0.4u as=0 ps=0 ad=0 pd=0 m=3
-M2 OUT IN VDD VDD pch w=3.6u l=1.2u as=0 ps=0 ad=0 pd=0 m=3
+M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=3
 .ends
 
 
@@ -66,7 +66,7 @@ M2 OUT IN VDD VDD pch w=3.6u l=1.2u as=0 ps=0 ad=0 pd=0 m=3
 *.iopin OUT
 *.iopin IN
 M1 OUT IN GND GND nch w=1.2u l=0.4u as=0 ps=0 ad=0 pd=0 m=9
-M2 OUT IN VDD VDD pch w=3.6u l=1.2u as=0 ps=0 ad=0 pd=0 m=9
+M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=9
 .ends
 
 

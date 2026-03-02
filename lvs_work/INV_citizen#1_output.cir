@@ -1,0 +1,29 @@
+* Created by KLayout
+
+* cell invbuf
+* pin GND
+* pin IN
+* pin OUT
+* pin VDD
+.SUBCKT invbuf 1 5 6 7
+* net 1 GND
+* net 5 IN
+* net 6 OUT
+* net 7 VDD
+* device instance $1 r0 *1 39.63,3.38 NMOS
+M$1 2 5 1 1 NMOS L=0.4U W=1.2U AS=1.62P AD=1.62P PS=5.1U PD=5.1U
+* device instance $2 r270 *1 39.58,13.48 PMOS
+M$2 7 5 2 7 PMOS L=0.4U W=3.6U AS=3.42P AD=3.42P PS=10.5U PD=10.5U
+* device instance $5 r0 *1 44.83,3.38 NMOS
+M$5 3 2 1 1 NMOS L=0.4U W=3.6U AS=4.86P AD=4.86P PS=15.3U PD=15.3U
+* device instance $8 r0 *1 91.63,3.38 NMOS
+M$8 4 3 1 1 NMOS L=0.4U W=10.8U AS=14.58P AD=14.58P PS=45.9U PD=45.9U
+* device instance $17 r0 *1 138.43,3.38 NMOS
+M$17 6 4 1 1 NMOS L=0.4U W=32.4U AS=43.74P AD=43.74P PS=137.7U PD=137.7U
+* device instance $44 r270 *1 44.78,13.48 PMOS
+M$44 7 2 3 7 PMOS L=0.4U W=10.8U AS=10.26P AD=10.26P PS=31.5U PD=31.5U
+* device instance $53 r270 *1 91.58,13.48 PMOS
+M$53 7 3 4 7 PMOS L=0.4U W=32.4U AS=30.78P AD=30.78P PS=94.5U PD=94.5U
+* device instance $80 r270 *1 138.38,13.48 PMOS
+M$80 7 4 6 7 PMOS L=0.4U W=97.2U AS=92.34P AD=92.34P PS=283.5U PD=283.5U
+.ENDS invbuf
