@@ -1,0 +1,5 @@
+---
+target: neuCMOSNAND2_citizen#1
+reference: lvs_work/neuCMOSNAND2_citizen#1_reference.cir.txt
+netlist: "/home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/simulation/neuCMOSNAND2_citizen_1.spice"
+schematic: "/home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/simulation/neuCMOSNAND2_citizen_1.spice"

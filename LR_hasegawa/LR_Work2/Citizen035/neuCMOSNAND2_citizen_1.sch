@@ -16,7 +16,7 @@ N -610 -0 -580 -0 {lab=#net5}
 N -710 -30 -650 -30 {lab=IN1}
 N -710 40 -650 40 {lab=IN2}
 N -480 -0 -440 0 {lab=#net4}
-N -710 100 -650 100 {lab=IN3}
+N -710 100 -650 100 {lab=GND}
 N -610 40 -610 100 {lab=#net5}
 N -440 -0 -350 -0 {lab=#net4}
 C {work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER_Citizen.sym} -80 0 0 0 {name=x1}
@@ -30,7 +30,6 @@ VVDD VDD 0 DC 3.3
 
 VIN1 IN1 0 pulse(0 3.3 100n 1n 1n 100n 200n)
 VIN2 IN2 0 pulse(0 3.3 100n 1n 1n 100n 200n)
-VIN3 IN3 0 pulse(0 3.3 100n 1n 1n 100n 200n)
 
 *Cload Q 0 1p
 *Cload XQ 0 1p
@@ -61,4 +60,4 @@ m=1
 value=105f
 footprint=1206
 device=ceramic}
-C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/iopin.sym} -710 100 0 0 {name=p5 lab=IN3}
+C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/gnd.sym} -710 100 0 0 {name=l1 lab=GND}

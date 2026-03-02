@@ -14,9 +14,9 @@ N 310 -0 450 -0 {lab=OUT}
 N -610 -30 -610 40 {lab=#net5}
 N -610 -0 -580 -0 {lab=#net5}
 N -710 -30 -650 -30 {lab=IN1}
-N -710 40 -650 40 {lab=xxx}
-N -480 -0 -440 0 {lab=OUT}
-C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/opin.sym} 450 0 0 0 {name=p2 lab=OUT}
+N -710 40 -650 40 {lab=IN2}
+N -480 -0 -440 0 {lab=#net4}
+N -440 0 -350 0 {lab=#net4}
 C {work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER_Citizen.sym} -80 0 0 0 {name=x1}
 C {work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER3_Citizen.sym} 80 0 0 0 {name=x2}
 C {work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER9_Citizen.sym} 260 0 0 0 {name=x3}
@@ -26,7 +26,8 @@ C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/code_shown
 
 VVDD VDD 0 DC 3.3
 
-VIN IN 0 pulse(0 3.3 100n 1n 1n 100n 200n)
+VIN1 IN1 0 pulse(0 3.3 100n 1n 1n 100n 200n)
+VIN2 IN2 0 pulse(0 3.3 100n 1n 1n 100n 200n)
 
 *Cload Q 0 1p
 *Cload XQ 0 1p
@@ -45,7 +46,7 @@ write "buffer_citizen#1.raw"
 
 .endc"}
 C {work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER_Citizen.sym} -340 0 0 0 {name=x5}
-C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/iopin.sym} -440 0 0 0 {name=p1 lab=OUT}
+C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/iopin.sym} 450 0 0 0 {name=p1 lab=OUT}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/iopin.sym} -710 40 0 0 {name=p3 lab=IN2}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/iopin.sym} -710 -30 0 0 {name=p4 lab=IN1}
 C {.klayout/salt/Citizen035/Technology/tech/symbols/Xschem/Citizen035/cap.sym} -610 -40 1 0 {name=C1

@@ -1,0 +1,5 @@
+---
+target: NAND2_citizen#2
+reference: lvs_work/NAND2_citizen#2_reference.cir.txt
+netlist: "/home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/simulation/NAND2_citizen#2.spice"
+schematic: "/home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/simulation/NAND2_citizen#2.spice"

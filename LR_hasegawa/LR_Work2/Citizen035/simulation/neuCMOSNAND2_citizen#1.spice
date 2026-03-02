@@ -1,0 +1,91 @@
+** sch_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/neuCMOSNAND2_citizen#1.sch
+**.subckt neuCMOSNAND2_citizen#1 OUT IN2 IN1
+*.iopin OUT
+*.iopin IN2
+*.iopin IN1
+x1 net4 net1 INVERTER_Citizen
+x2 net1 net2 INVERTER3_Citizen
+x3 net2 net3 INVERTER9_Citizen
+x4 net3 OUT INVERTER27_Citizen
+x5 net5 net4 INVERTER_Citizen
+C1 net5 IN1 1p m=1
+C2 net5 IN2 1p m=1
+C3 net5 GND 1p m=1
+**** begin user architecture code
+
+blabla
+
+
+
+
+VVDD VDD 0 DC 3.3
+
+VIN1 IN1 0 pulse(0 3.3 100n 1n 1n 100n 200n)
+VIN2 IN2 0 pulse(0 3.3 100n 1n 1n 100n 200n)
+
+*Cload Q 0 1p
+*Cload XQ 0 1p
+
+
+.control
+tran 1n 1000n
+
+meas TRAN Iavg AVG I(VVDD)
+
+meas TRAN tplh TRIG CLK VAL=1.65 RISE=2 TARG Q VAL=1.65 RISE=1
+meas TRAN tphl TRIG CLK VAL=1.65 RISE=3 TARG Q VAL=1.65 FALL=1
+
+set file=sim.log
+write buffer_citizen#1.raw
+
+.endc
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER_Citizen.sym # of pins=2
+** sym_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER_Citizen.sym
+** sch_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER_Citizen.sch
+.subckt INVERTER_Citizen IN OUT
+*.iopin OUT
+*.iopin IN
+M1 OUT IN GND GND nch w=5u l=0.18u as=0 ps=0 ad=0 pd=0 m=1
+M2 OUT IN VDD VDD pch w=5u l=0.18u as=0 ps=0 ad=0 pd=0 m=1
+.ends
+
+
+* expanding   symbol:  work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER3_Citizen.sym # of pins=2
+** sym_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER3_Citizen.sym
+** sch_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER3_Citizen.sch
+.subckt INVERTER3_Citizen IN OUT
+*.iopin OUT
+*.iopin IN
+M1 OUT IN GND GND nch w=5u l=0.18u as=0 ps=0 ad=0 pd=0 m=3
+M2 OUT IN VDD VDD pch w=5u l=0.18u as=0 ps=0 ad=0 pd=0 m=3
+.ends
+
+
+* expanding   symbol:  work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER9_Citizen.sym # of pins=2
+** sym_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER9_Citizen.sym
+** sch_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER9_Citizen.sch
+.subckt INVERTER9_Citizen IN OUT
+*.iopin OUT
+*.iopin IN
+M1 OUT IN GND GND nch w=5u l=0.18u as=0 ps=0 ad=0 pd=0 m=9
+M2 OUT IN VDD VDD pch w=5u l=0.18u as=0 ps=0 ad=0 pd=0 m=9
+.ends
+
+
+* expanding   symbol:  work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER27_Citizen.sym # of pins=2
+** sym_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER27_Citizen.sym
+** sch_path: /home/tororo009/work/LR-hasegawa/LR_hasegawa/LR_Work2/Citizen035/INVERTER27_Citizen.sch
+.subckt INVERTER27_Citizen IN OUT
+*.iopin IN
+*.iopin OUT
+M1 OUT IN GND GND nch w=1.2u l=0.4u as=0 ps=0 ad=0 pd=0 m=27
+M2 OUT IN VDD VDD pch w=3.6u l=0.4u as=0 ps=0 ad=0 pd=0 m=27
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

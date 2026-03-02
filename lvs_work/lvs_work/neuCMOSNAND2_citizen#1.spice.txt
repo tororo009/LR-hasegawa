@@ -1,0 +1,33 @@
+** sch_path: /home/tororo009/work/LR_hasegawa/LR_hasegawa/LR_Work2/Citizen035/neuCMOSNAND2_citizen#1.sch
+**.subckt neuCMOSNAND2_citizen#1 OUT IN2 IN1
+*.iopin OUT
+*.iopin IN2
+*.iopin IN1
+x1 net4 net1 INVERTER_Citizen
+x2 net1 net2 INVERTER3_Citizen
+x3 net2 net3 INVERTER9_Citizen
+x4 net3 OUT INVERTER27_Citizen
+x5 net5 net4 INVERTER_Citizen
+C1 net5 IN1 1p m=1
+C2 net5 IN2 1p m=1
+C3 net5 GND 1p m=1
+**** begin user architecture code
+
+blabla
+
+
+
+
+VVDD VDD 0 DC 3.3
+
+VIN1 IN1 0 pulse(0 3.3 100n 1n 1n 100n 200n)
+VIN2 IN2 0 pulse(0 3.3 100n 1n 1n 100n 200n)
+
+*Cload Q 0 1p
+*Cload XQ 0 1p
+
+
+.control
+tran 1n 1000n
+
+meas TRAN Iavg AVG I(VVDD)
